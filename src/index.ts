@@ -1,9 +1,9 @@
 import type { RenderableTreeNodes, Scalar } from "@markdoc/markdoc";
-import type { Component, JSX } from "solid-js";
+import type { Component, JSXElement } from "solid-js";
 import { createComponent } from "solid-js";
 import { Dynamic } from "solid-js/web";
 
-function Fragment(props: { children: JSX.Element }) {
+function Fragment(props: { children: JSXElement }) {
   return props.children;
 }
 
@@ -31,7 +31,7 @@ export default function dynamic(
     return output;
   }
 
-  function render(node: RenderableTreeNodes): any {
+  function render(node: RenderableTreeNodes): JSXElement | null {
     if (Array.isArray(node)) {
       return createComponent(Fragment, { children: node.map(render) });
     }
