@@ -4,7 +4,12 @@
   "author": "Dillon Chanis",
   "license": "MIT",
   "description": "SolidJS renderer for Markdoc",
-  "keywords": [],
+  "keywords": [
+    "markdoc",
+    "solid",
+    "solidjs",
+    "markdown"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -23,12 +28,25 @@
   },
   "devDependencies": {
     "@markdoc/markdoc": "^0.1.2",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
     "eslint": "^8.15.0",
     "solid-js": "^1.4.1",
     "tsup": "^5.12.7",
     "typescript": "^4.6.4"
   },
+  "peerDependencies": {
+    "@markdoc/markdoc": "*",
+    "solid-js": ">=1.4.0"
+  },
   "engines": {
     "node": ">=14.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillonchanis/solidjs-markdoc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dillonchanis/solidjs-markdoc/issues"
   }
 }
