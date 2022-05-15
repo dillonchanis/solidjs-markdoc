@@ -101,7 +101,7 @@ function App() {
     Check this alert:
 
     {% alert type="info" %}
-      Hey there! Something to look at!
+    Hey there! Something to look at!
     {% /alert %}
   `;
 
@@ -166,7 +166,7 @@ function App() {
     Check this alert:
 
     {% alert type="info" %}
-      Hey there! Something to look at!
+    Hey there! Something to look at!
     {% /alert %}
   `;
 
