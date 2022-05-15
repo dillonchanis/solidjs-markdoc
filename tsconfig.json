@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
     "strict": true,
-    "target": "ES2021",
-    "lib": ["ES2021"],
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationMap": true,
-    "moduleResolution": "node"
-  },
-  "include": ["**/*.ts", "**/*.d.ts"],
-  "exclude": ["dist"]
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  }
 }
